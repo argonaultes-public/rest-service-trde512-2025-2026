@@ -18,7 +18,7 @@ jobs:
   lesuperjobdebuild:
 
     runs-on: ubuntu-latest
-    container: ubuntu:latest
+    container: maven:3.9.5-amazoncorretto-17
 
     # Service containers to run with `container-job`
     services:

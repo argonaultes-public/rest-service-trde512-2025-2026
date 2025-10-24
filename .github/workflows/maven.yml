@@ -28,4 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
+      env:
+        DATABASE_URL_TEST: ${{ vars.REPO_DATABASE_URL }}
       run: mvn -Ptestdb clean integration-test --file pom.xml

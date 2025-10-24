@@ -18,6 +18,7 @@ jobs:
   lesuperjobdebuild:
 
     runs-on: ubuntu-latest
+    container: ubuntu:latest
 
     # Service containers to run with `container-job`
     services:

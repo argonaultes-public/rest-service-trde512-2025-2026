@@ -11,6 +11,7 @@ services:
     volumes:
       - "m2:/root/.m2"
       - "/home/gael/Projects/argonaultes/tmp-projects/trde512-ds-2025-2026/rest-service/:/app"
+    working_dir: /app
     command: mvn -Ptestdb clean integration-test
     depends_on:
       - postgresdb
